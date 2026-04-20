@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Franco Yepez - Materiales del Curso</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #000;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding: 40px 20px;
+      }
+      .main-container {
+        width: 100%;
+        max-width: 900px;
+        background-color: #cbd5e0;
+        padding: 30px;
+        border-radius: 8px;
+      }
+      .header-banner {
+        background-color: #f6ad55;
+        text-align: center;
+        padding: 25px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #000;
+      }
+      .navbar {
+        background-color: #68d391;
+        padding: 15px;
+        text-align: center;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #000;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .navbar a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        margin: 0 6px;
+        font-size: 0.85em;
+      }
+      .navbar a:hover { text-decoration: underline; }
+      .content-wrapper {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+      .main-info {
+        flex: 2;
+        min-width: 280px;
+        background-color: #718096;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        border: 1px solid #000;
+      }
+      .info-card {
+        background-color: #9ae6b4;
+        margin: 15px 0;
+        padding: 15px;
+        border-radius: 15px;
+        border: 1px solid #4a5568;
+        text-align: left;
+      }
+      .info-card h3 { margin-top: 0; text-align: center; }
+      .side-info {
+        flex: 1;
+        min-width: 200px;
+        background-color: #63b3ed;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        border: 1px solid #000;
+      }
+      .tema-item {
+        background-color: #e9d8fd;
+        border-radius: 8px;
+        padding: 10px 12px;
+        margin: 6px 0;
+        border-left: 4px solid #805ad5;
+        font-size: 0.9em;
+      }
+      .codigo-bloque {
+        background-color: #1a202c;
+        color: #a0e97a;
+        padding: 12px;
+        border-radius: 8px;
+        font-family: "Courier New", monospace;
+        font-size: 0.85em;
+        margin: 10px 0;
+        white-space: pre;
+        overflow-x: auto;
+      }
+      .footer-banner {
+        background-color: #f6ad55;
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px solid #000;
+        font-size: 0.9em;
+      }
+      @media (max-width: 600px) {
+        .content-wrapper { flex-direction: column; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header-banner">
+        <h1>Materiales del Curso</h1>
+        <p>Programacion Web - Ingenieria de Sistemas UTEA</p>
+      </header>
+
+      <nav class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="biografia.html">Biografia</a>
+        <a href="familia.html">Familia</a>
+        <a href="estudios.html">Estudios</a>
+        <a href="materiales.html">Materiales</a>
+        <a href="album.html">Album</a>
+        <a href="descargas.html">Descargas</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <div class="content-wrapper">
+        <main class="main-info">
+          <h2>Temas del Curso de Programacion Web</h2>
+
+          <div class="info-card">
+            <h3>Unidad 1: HTML5</h3>
+            <div class="tema-item">Estructura basica de un documento HTML</div>
+            <div class="tema-item">Etiquetas de texto: h1-h6, p, span, strong, em</div>
+            <div class="tema-item">Listas: ol, ul, li</div>
+            <div class="tema-item">Tablas: table, tr, td, th</div>
+            <div class="tema-item">Formularios: form, input, button, select, textarea</div>
+            <div class="tema-item">Multimedia: img, video, audio</div>
+            <div class="tema-item">Estructura semantica: header, nav, main, section, article, footer</div>
+
+            <p style="margin-top:10px;"><strong>Ejemplo de estructura HTML5:</strong></p>
+            <div class="codigo-bloque">&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Mi Pagina&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;...&lt;/header&gt;
+    &lt;main&gt;...&lt;/main&gt;
+    &lt;footer&gt;...&lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</div>
+          </div>
+
+          <div class="info-card">
+            <h3>Unidad 2: CSS3</h3>
+            <div class="tema-item">Selectores: clase, id, elemento, descendente</div>
+            <div class="tema-item">Box model: margin, padding, border</div>
+            <div class="tema-item">Flexbox y Grid layout</div>
+            <div class="tema-item">Colores, fondos y gradientes</div>
+            <div class="tema-item">Tipografia: font-family, font-size, font-weight</div>
+            <div class="tema-item">Animaciones y transiciones</div>
+            <div class="tema-item">Responsive design con media queries</div>
+
+            <p style="margin-top:10px;"><strong>Ejemplo de CSS3:</strong></p>
+            <div class="codigo-bloque">.contenedor {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .contenedor {
+    flex-direction: column;
+  }
+}</div>
+          </div>
+
+          <div class="info-card">
+            <h3>Unidad 3: Enlaces</h3>
+            <div class="tema-item">Enlace relativo: href="pagina.html"</div>
+            <div class="tema-item">Enlace absoluto: href="https://www.ejemplo.com"</div>
+            <div class="tema-item">Atributo target="_blank" para abrir en nueva pestana</div>
+            <div class="tema-item">Enlace ancla: href="#seccion"</div>
+            <div class="tema-item">Enlace a correo: href="mailto:correo@ejemplo.com"</div>
+            <div class="tema-item">Enlace de descarga: atributo download</div>
+          </div>
+
+          <div class="info-card">
+            <h3>Unidad 4: Formularios</h3>
+            <div class="tema-item">Tipos de input: text, email, password, number, date</div>
+            <div class="tema-item">Atributos: required, placeholder, name, id, value</div>
+            <div class="tema-item">Elementos select y option</div>
+            <div class="tema-item">Textarea para texto largo</div>
+            <div class="tema-item">Botones: submit, reset, button</div>
+            <div class="tema-item">Validacion HTML5 nativa</div>
+          </div>
+
+          <div class="info-card">
+            <h3>Formulario de ejemplo</h3>
+            <div style="background:white;padding:15px;border-radius:8px;border:1px solid #4a5568;">
+              <label for="nombre">Nombre:</label><br>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre"
+                style="width:100%;padding:6px;margin:4px 0 10px 0;border-radius:6px;border:1px solid #ccc;"><br>
+              <label for="correo">Correo:</label><br>
+              <input type="email" id="correo" name="correo" placeholder="tu@correo.com"
+                style="width:100%;padding:6px;margin:4px 0 10px 0;border-radius:6px;border:1px solid #ccc;"><br>
+              <label for="mensaje">Mensaje:</label><br>
+              <textarea id="mensaje" name="mensaje" rows="3" placeholder="Tu mensaje..."
+                style="width:100%;padding:6px;border-radius:6px;border:1px solid #ccc;"></textarea><br>
+              <button type="button" onclick="alert('Formulario de ejemplo - sin envio real')"
+                style="margin-top:8px;padding:8px 20px;background:#68d391;border:1px solid #000;
+                       border-radius:8px;font-weight:bold;cursor:pointer;">
+                Enviar
+              </button>
+            </div>
+          </div>
+        </main>
+
+        <aside class="side-info">
+          <h2>Referencias</h2>
+          <p style="text-align:left;font-size:0.85em;"><strong>Sitios externos:</strong></p>
+          <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener"
+             style="display:block;background:#f6ad55;border-radius:8px;padding:8px;
+                    text-align:center;font-weight:bold;color:black;text-decoration:none;
+                    margin:6px 0;border:1px solid #000;font-size:0.85em;">
+            W3Schools HTML
+          </a>
+          <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener"
+             style="display:block;background:#f6ad55;border-radius:8px;padding:8px;
+                    text-align:center;font-weight:bold;color:black;text-decoration:none;
+                    margin:6px 0;border:1px solid #000;font-size:0.85em;">
+            MDN HTML
+          </a>
+          <a href="https://www.w3schools.com/css/" target="_blank" rel="noopener"
+             style="display:block;background:#f6ad55;border-radius:8px;padding:8px;
+                    text-align:center;font-weight:bold;color:black;text-decoration:none;
+                    margin:6px 0;border:1px solid #000;font-size:0.85em;">
+            W3Schools CSS
+          </a>
+          <a href="https://css-tricks.com" target="_blank" rel="noopener"
+             style="display:block;background:#f6ad55;border-radius:8px;padding:8px;
+                    text-align:center;font-weight:bold;color:black;text-decoration:none;
+                    margin:6px 0;border:1px solid #000;font-size:0.85em;">
+            CSS-Tricks
+          </a>
+
+          <div style="margin-top:20px;text-align:left;font-size:0.85em;">
+            <p><strong>Herramientas:</strong></p>
+            <a href="https://code.visualstudio.com" target="_blank" rel="noopener">Visual Studio Code</a><br>
+            <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          </div>
+
+          <div style="margin-top:20px;">
+            <a href="descargas.html" style="display:block;background:#9ae6b4;border-radius:10px;
+               padding:10px;text-align:center;font-weight:bold;color:black;
+               text-decoration:none;border:1px solid #000;">
+              Descargar materiales
+            </a>
+          </div>
+        </aside>
+      </div>
+
+      <footer class="footer-banner">
+        <p>Universidad Tecnologica de los Andes</p>
+        <p>Escuela Profesional de Ingenieria de Sistemas</p>
+        <p>&copy; 2026 - Franco Yepez Vargas</p>
+      </footer>
+    </div>
+  </body>
+</html>

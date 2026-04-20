@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Franco Yepez - Familia</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #000;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding: 40px 20px;
+      }
+      .main-container {
+        width: 100%;
+        max-width: 900px;
+        background-color: #cbd5e0;
+        padding: 30px;
+        border-radius: 8px;
+      }
+      .header-banner {
+        background-color: #f6ad55;
+        text-align: center;
+        padding: 25px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #000;
+      }
+      .navbar {
+        background-color: #68d391;
+        padding: 15px;
+        text-align: center;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #000;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .navbar a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        margin: 0 6px;
+        font-size: 0.85em;
+      }
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+      .content-wrapper {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+      .main-info {
+        flex: 2;
+        min-width: 280px;
+        background-color: #718096;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        border: 1px solid #000;
+      }
+      .info-card {
+        background-color: #9ae6b4;
+        margin: 15px 0;
+        padding: 15px;
+        border-radius: 15px;
+        border: 1px solid #4a5568;
+        text-align: left;
+      }
+      .info-card h3 {
+        margin-top: 0;
+        text-align: center;
+      }
+      .side-info {
+        flex: 1;
+        min-width: 200px;
+        background-color: #63b3ed;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        border: 1px solid #000;
+      }
+      .miembro-card {
+        background-color: #bee3f8;
+        border-radius: 12px;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #4a5568;
+        text-align: left;
+      }
+      .miembro-card h4 {
+        margin: 0 0 5px 0;
+      }
+      /* Espacio para foto de miembro */
+      .foto-placeholder {
+        width: 100%;
+        height: 80px;
+        background-color: #e2e8f0;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.75em;
+        color: #4a5568;
+        margin-bottom: 8px;
+        border: 1px dashed #718096;
+      }
+      .footer-banner {
+        background-color: #f6ad55;
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px solid #000;
+        font-size: 0.9em;
+      }
+      @media (max-width: 600px) {
+        .content-wrapper {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header-banner">
+        <h1>Mi Familia</h1>
+        <p>Las personas mas importantes en mi vida</p>
+      </header>
+
+      <nav class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="biografia.html">Biografia</a>
+        <a href="familia.html">Familia</a>
+        <a href="estudios.html">Estudios</a>
+        <a href="materiales.html">Materiales</a>
+        <a href="album.html">Album</a>
+        <a href="descargas.html">Descargas</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <div class="content-wrapper">
+        <main class="main-info">
+          <h2>Mi Familia</h2>
+
+          <div class="info-card">
+            <h3>Descripcion General</h3>
+            <p>
+              Mi familia es parte fundamental de lo que soy hoy. Gracias a ellos
+              he podido crecer como persona y continuar con mis estudios
+              universitarios. A continuacion te presento a los integrantes de mi
+              familia.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <h3>Miembros de la familia</h3>
+
+            <div class="miembro-card">
+              <div class="foto-placeholder">
+                <img
+                  src="fotos/foto4.jpg"
+                  alt="mama"
+                  style="
+                    width: 100%;
+                    border-radius: 8px;
+                    margin-bottom: 8px;
+                    height: 80px;
+                  "
+                />
+              </div>
+              <h4>Juanita</h4>
+              <p><strong>Relacion:</strong> Madre</p>
+              <p><strong>Descripcion:</strong> es buena madre</p>
+            </div>
+
+            <div class="miembro-card">
+              <div class="foto-placeholder">
+                <img
+                  src="fotos/foto9.jpg"
+                  alt="mama"
+                  style="
+                    width: 100%;
+                    border-radius: 8px;
+                    margin-bottom: 8px;
+                    height: 80px;
+                  "
+                />
+              </div>
+              <h4>Juanito</h4>
+              <p><strong>Relacion:</strong> Padre</p>
+              <p><strong>Descripcion:</strong> Es buen padre</p>
+            </div>
+
+            <div class="miembro-card">
+              <div class="foto-placeholder">
+                <img
+                  src="fotos/foto9.jpg"
+                  alt="mama"
+                  style="
+                    width: 100%;
+                    border-radius: 8px;
+                    margin-bottom: 8px;
+                    height: 80px;
+                  "
+                />
+              </div>
+              <h4>Pedrito</h4>
+              <p><strong>Relacion:</strong> Hermano</p>
+              <p><strong>Descripcion:</strong> es buen hermano</p>
+            </div>
+
+            <div class="miembro-card">
+              <div class="foto-placeholder">
+                <img
+                  src="fotos/foto9.jpg"
+                  alt="mama"
+                  style="
+                    width: 100%;
+                    border-radius: 8px;
+                    margin-bottom: 8px;
+                    height: 80px;
+                  "
+                />
+              </div>
+              <h4>juancito</h4>
+              <p><strong>Relacion:</strong> tio</p>
+              <p><strong>Descripcion:</strong> es buen tio</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>Foto familiar</h3>
+            <div
+              style="
+                width: 100%;
+                height: 150px;
+                background: #e2e8f0;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #4a5568;
+                border: 1px dashed #718096;
+              "
+            >
+              <img
+                src="fotos/foto9.jpg"
+                alt="mama"
+                style="
+                  width: 100%;
+                  border-radius: 8px;
+                  margin-bottom: 8px;
+                  height: 80px;
+                "
+              />
+            </div>
+          </div>
+        </main>
+
+        <aside class="side-info">
+          <h2>Valores Familiares</h2>
+          <p style="text-align: left; font-size: 0.9em">
+            Valores que nos caracterizan como familia:
+          </p>
+          <ul style="text-align: left; font-size: 0.9em">
+            <li>Union y apoyo mutuo</li>
+            <li>Respeto</li>
+            <li>Trabajo duro</li>
+            <li>Honestidad</li>
+          </ul>
+
+          <div style="margin-top: 20px; text-align: left; font-size: 0.85em">
+            <p><strong>Ciudad de origen:</strong> Ica, Peru</p>
+            <p><strong>Integrantes:</strong> 5</p>
+            <p><strong>Actividad principal:</strong> comer</p>
+          </div>
+
+          <div style="margin-top: 20px">
+            <a
+              href="album.html"
+              style="
+                display: block;
+                background: #f6ad55;
+                border-radius: 10px;
+                padding: 10px;
+                text-align: center;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+                border: 1px solid #000;
+              "
+            >
+              Ver album de fotos
+            </a>
+          </div>
+        </aside>
+      </div>
+
+      <footer class="footer-banner">
+        <p>Universidad Tecnologica de los Andes</p>
+        <p>Escuela Profesional de Ingenieria de Sistemas</p>
+        <p>&copy; 2026 - Franco Yepez Vargas</p>
+      </footer>
+    </div>
+  </body>
+</html>

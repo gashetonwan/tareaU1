@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Franco Yepez - Album de Fotos</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #000;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding: 40px 20px;
+      }
+      .main-container {
+        width: 100%;
+        max-width: 900px;
+        background-color: #cbd5e0;
+        padding: 30px;
+        border-radius: 8px;
+      }
+      .header-banner {
+        background-color: #f6ad55;
+        text-align: center;
+        padding: 25px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #000;
+      }
+      .navbar {
+        background-color: #68d391;
+        padding: 15px;
+        text-align: center;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #000;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .navbar a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        margin: 0 6px;
+        font-size: 0.85em;
+      }
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+      .album-container {
+        background-color: #718096;
+        padding: 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #000;
+      }
+      .album-container h2 {
+        text-align: center;
+        color: white;
+        margin-top: 0;
+      }
+      .foto-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 15px;
+      }
+      .foto-item {
+        background-color: #9ae6b4;
+        border-radius: 12px;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #4a5568;
+      }
+      .foto-item img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 8px;
+        border: 1px solid #4a5568;
+      }
+      /* Placeholder visible cuando no hay imagen */
+      .foto-placeholder {
+        width: 100%;
+        height: 160px;
+        background-color: #e2e8f0;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.75em;
+        color: #4a5568;
+        border: 1px dashed #718096;
+        text-align: center;
+        padding: 5px;
+      }
+      .foto-item p {
+        margin: 8px 0 0 0;
+        font-size: 0.85em;
+        font-weight: bold;
+      }
+      .video-section {
+        background-color: #9ae6b4;
+        border-radius: 15px;
+        padding: 20px;
+        margin-top: 20px;
+        border: 1px solid #4a5568;
+        text-align: center;
+      }
+      .video-section h3 {
+        margin-top: 0;
+      }
+      .video-placeholder {
+        width: 100%;
+        max-width: 300px;
+        height: 280px;
+        background-color: #1a202c;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #a0e97a;
+        font-size: 0.9em;
+        margin: 10px auto;
+        border: 2px dashed #4a5568;
+        padding: 20px;
+        text-align: center;
+      }
+      .footer-banner {
+        background-color: #f6ad55;
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px solid #000;
+        font-size: 0.9em;
+      }
+      @media (max-width: 500px) {
+        .foto-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header-banner">
+        <h1>Album de Fotos</h1>
+        <p>Mis momentos y recuerdos</p>
+      </header>
+
+      <nav class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="biografia.html">Biografia</a>
+        <a href="familia.html">Familia</a>
+        <a href="estudios.html">Estudios</a>
+        <a href="materiales.html">Materiales</a>
+        <a href="album.html">Album</a>
+        <a href="descargas.html">Descargas</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <div class="album-container">
+        <h2>Galeria de Fotos</h2>
+        <p style="color: #e2e8f0; text-align: center; font-size: 0.9em">
+          Planes que tengo para mi vida
+        </p>
+
+        <div class="foto-grid">
+          <div class="foto-item">
+            <div class="foto-placeholder">
+              <img src="fotos/foto1.jpg" alt="foto gato 1" />
+            </div>
+            <p>[ comer saludable ]</p>
+          </div>
+
+          <div class="foto-item">
+            <div class="foto-placeholder">
+              <img src="fotos/foto2.jpg" alt="foto 2" />
+            </div>
+            <p>[mirar tu culote]</p>
+          </div>
+
+          <div class="foto-item">
+            <div class="foto-placeholder">
+              <img src="fotos/fot3.jpg" alt="foto 3 de gato" />
+            </div>
+            <p>[sacarte la rcsmr]</p>
+          </div>
+
+          <div class="foto-item">
+            <div class="foto-placeholder">
+              <img src="fotos/foto4.jpg" alt="foto 4 gato" />
+            </div>
+            <p>[cita con mi chikistrikys]</p>
+          </div>
+
+          <div class="foto-item">
+            <div class="foto-placeholder">
+              <img src="fotos/foto5.jpg" alt="foto 5 gato" />
+            </div>
+            <p>[comer rico ;) ]</p>
+          </div>
+
+          <div class="foto-item">
+            <div class="foto-placeholder">
+              <img src="fotos/foto6.jpg" alt="foto 6 gato" />
+            </div>
+            <p>[pasar navidad con la familia]</p>
+          </div>
+
+          <div class="foto-item">
+            <div class="foto-placeholder">
+              <img src="fotos/foto7.jpg" alt="foto7 gato" />
+            </div>
+            <p>[chambear en un banco]</p>
+          </div>
+
+          <div class="foto-item">
+            <div class="foto-placeholder">
+              <img src="fotos/foto8.jpg" alt="fot 8 gato" />
+            </div>
+            <p>[Aprender a ahcer evasion fiscal]</p>
+          </div>
+
+          <div class="foto-item">
+            <div class="foto-placeholder">
+              <img src="fotos/foto9.jpg" alt="fot 9 gato" />
+            </div>
+            <p>[Evasion fiscal]</p>
+          </div>
+
+          <div class="foto-item">
+            <div class="foto-placeholder">
+              <img src="fotos/foto10.jpg" alt="foto 10 gato" />
+            </div>
+            <p>[vivir en un paraiso fiscal]</p>
+          </div>
+        </div>
+
+        <div class="video-section">
+          <h3>Video de presentacion</h3>
+          <div class="video-placeholder">
+            <video controls width="100%" style="border-radius: 10px">
+              <source src="duvet.mp4" type="video/mp4" />
+              tu navegador no soporta
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer-banner">
+        <p>Universidad Tecnologica de los Andes</p>
+        <p>Escuela Profesional de Ingenieria de Sistemas</p>
+        <p>&copy; 2026 - Franco Yepez Vargas</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Franco Yepez - Contacto</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #000;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding: 40px 20px;
+      }
+      .main-container {
+        width: 100%;
+        max-width: 900px;
+        background-color: #cbd5e0;
+        padding: 30px;
+        border-radius: 8px;
+      }
+      .header-banner {
+        background-color: #f6ad55;
+        text-align: center;
+        padding: 25px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #000;
+      }
+      .navbar {
+        background-color: #68d391;
+        padding: 15px;
+        text-align: center;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #000;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .navbar a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        margin: 0 6px;
+        font-size: 0.85em;
+      }
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+      .content-wrapper {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+      .main-info {
+        flex: 2;
+        min-width: 280px;
+        background-color: #718096;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        border: 1px solid #000;
+      }
+      .info-card {
+        background-color: #9ae6b4;
+        margin: 15px 0;
+        padding: 15px;
+        border-radius: 15px;
+        border: 1px solid #4a5568;
+        text-align: left;
+      }
+      .info-card h3 {
+        margin-top: 0;
+        text-align: center;
+      }
+      .side-info {
+        flex: 1;
+        min-width: 200px;
+        background-color: #63b3ed;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        border: 1px solid #000;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin: 4px 0 10px 0;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-family: inherit;
+        font-size: 0.9em;
+      }
+      textarea {
+        resize: vertical;
+      }
+      .btn {
+        padding: 8px 20px;
+        background-color: #4299e1;
+        color: white;
+        border: 1px solid #000;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 0.9em;
+      }
+      .btn:hover {
+        background-color: #3182ce;
+      }
+      .btn-verde {
+        background-color: #68d391;
+        color: black;
+      }
+      .btn-verde:hover {
+        background-color: #48bb78;
+      }
+      /* Busqueda */
+      .search-result-item {
+        background-color: #bee3f8;
+        border-radius: 8px;
+        padding: 8px 12px;
+        margin: 5px 0;
+        font-size: 0.9em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #search-results {
+        margin-top: 10px;
+      }
+      .footer-banner {
+        background-color: #f6ad55;
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px solid #000;
+        font-size: 0.9em;
+      }
+      @media (max-width: 600px) {
+        .content-wrapper {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header-banner">
+        <h1>Contacto e Informacion Adicional</h1>
+        <p>Ponte en contacto o busca contenido del sitio</p>
+      </header>
+
+      <nav class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="biografia.html">Biografia</a>
+        <a href="familia.html">Familia</a>
+        <a href="estudios.html">Estudios</a>
+        <a href="materiales.html">Materiales</a>
+        <a href="album.html">Album</a>
+        <a href="descargas.html">Descargas</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <div class="content-wrapper">
+        <main class="main-info">
+          <h2>Contacto</h2>
+
+          <div class="info-card">
+            <h3>Formulario de Contacto</h3>
+            <label for="c-nombre">Nombre:</label>
+            <input type="text" id="c-nombre" placeholder="Tu nombre completo" />
+
+            <label for="c-correo">Correo electronico:</label>
+            <input type="email" id="c-correo" placeholder="tu@correo.com" />
+
+            <label for="c-asunto">Asunto:</label>
+            <select id="c-asunto">
+              <option value="">-- Selecciona un asunto --</option>
+              <option value="consulta">Consulta general</option>
+              <option value="academico">Tema academico</option>
+              <option value="proyecto">Colaboracion en proyecto</option>
+              <option value="otro">Otro</option>
+            </select>
+
+            <label for="c-mensaje">Mensaje:</label>
+            <textarea
+              id="c-mensaje"
+              rows="4"
+              placeholder="Escribe tu mensaje aqui..."
+            ></textarea>
+
+            <button class="btn btn-verde" onclick="enviarContacto()">
+              Enviar Mensaje
+            </button>
+            <p
+              id="msg-exito"
+              style="
+                display: none;
+                color: #276749;
+                font-weight: bold;
+                margin-top: 8px;
+              "
+            >
+              Mensaje enviado. Gracias por contactarme.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <h3>Informacion de Contacto Directo</h3>
+            <p>
+              <strong>Correo universitario:</strong>
+              <a href="mailto:202313001i@utea.edu.pe">202313001i@utea.edu.pe</a>
+            </p>
+            <p>
+              <strong>GitHub:</strong>
+              <a
+                href="https://github.com/gashetonwan"
+                target="_blank"
+                rel="noopener"
+              >
+                github.com/gashetonwan
+              </a>
+            </p>
+            <p><strong>Correo personal:</strong> fran.carlo@outlook.com</p>
+            <p><strong>Telefono:</strong> 991234567</p>
+            <p><strong>Ciudad:</strong> Cusco</p>
+          </div>
+        </main>
+
+        <aside class="side-info">
+          <h2>Buscar en el sitio</h2>
+          <p style="font-size: 0.85em; text-align: left">
+            Escribe una palabra clave para encontrar la seccion que necesitas:
+          </p>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Ej: familia, fotos, HTML..."
+            oninput="buscarEnSitio()"
+            style="margin-bottom: 4px"
+          />
+          <button class="btn" onclick="buscarEnSitio()" style="width: 100%">
+            Buscar
+          </button>
+
+          <div id="search-results"></div>
+
+          <div style="margin-top: 20px; text-align: left; font-size: 0.85em">
+            <strong>Paginas del sitio:</strong>
+            <ul style="padding-left: 18px; margin: 6px 0">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="biografia.html">Biografia</a></li>
+              <li><a href="familia.html">Familia</a></li>
+              <li><a href="estudios.html">Estudios</a></li>
+              <li><a href="materiales.html">Materiales del curso</a></li>
+              <li><a href="album.html">Album de fotos</a></li>
+              <li><a href="descargas.html">Descargas</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <footer class="footer-banner">
+        <p>Universidad Tecnologica de los Andes</p>
+        <p>Escuela Profesional de Ingenieria de Sistemas</p>
+        <p>&copy; 2026 - Franco Yepez Vargas</p>
+      </footer>
+    </div>
+
+    <script>
+      // Datos del sitio para la busqueda
+      var paginas = [
+        {
+          titulo: "Inicio",
+          url: "index.html",
+          palabras: ["inicio", "presentacion", "bienvenida", "home"],
+        },
+        {
+          titulo: "Biografia",
+          url: "biografia.html",
+          palabras: [
+            "biografia",
+            "personal",
+            "ica",
+            "vida",
+            "historia",
+            "logros",
+            "hobbies",
+            "datos",
+          ],
+        },
+        {
+          titulo: "Familia",
+          url: "familia.html",
+          palabras: [
+            "familia",
+            "madre",
+            "padre",
+            "hermano",
+            "hermana",
+            "padres",
+            "familiar",
+          ],
+        },
+        {
+          titulo: "Estudios",
+          url: "estudios.html",
+          palabras: [
+            "estudios",
+            "utea",
+            "universidad",
+            "colegio",
+            "galileo",
+            "academico",
+            "ciclo",
+            "carrera",
+            "sistemas",
+          ],
+        },
+        {
+          titulo: "Materiales del curso",
+          url: "materiales.html",
+          palabras: [
+            "materiales",
+            "html",
+            "css",
+            "programacion",
+            "web",
+            "formularios",
+            "enlaces",
+            "curso",
+            "codigo",
+          ],
+        },
+        {
+          titulo: "Album de fotos",
+          url: "album.html",
+          palabras: [
+            "album",
+            "fotos",
+            "galeria",
+            "imagenes",
+            "video",
+            "recuerdos",
+            "fotos",
+          ],
+        },
+        {
+          titulo: "Descargas",
+          url: "descargas.html",
+          palabras: [
+            "descargas",
+            "pdf",
+            "zip",
+            "archivos",
+            "recursos",
+            "descargar",
+          ],
+        },
+        {
+          titulo: "Contacto",
+          url: "contacto.html",
+          palabras: [
+            "contacto",
+            "correo",
+            "email",
+            "mensaje",
+            "github",
+            "buscar",
+          ],
+        },
+      ];
+
+      function buscarEnSitio() {
+        var query = document
+          .getElementById("search-input")
+          .value.toLowerCase()
+          .trim();
+        var contenedor = document.getElementById("search-results");
+        contenedor.innerHTML = "";
+
+        if (query.length < 2) return;
+
+        var encontrados = paginas.filter(function (p) {
+          return (
+            p.palabras.some(function (pal) {
+              return pal.indexOf(query) !== -1;
+            }) || p.titulo.toLowerCase().indexOf(query) !== -1
+          );
+        });
+
+        if (encontrados.length === 0) {
+          contenedor.innerHTML =
+            '<p style="font-size:0.85em;color:#4a5568;">No se encontraron resultados para "' +
+            query +
+            '".</p>';
+          return;
+        }
+
+        encontrados.forEach(function (p) {
+          var item = document.createElement("div");
+          item.className = "search-result-item";
+          item.innerHTML =
+            "<span>" +
+            p.titulo +
+            '</span><a href="' +
+            p.url +
+            '" style="font-weight:bold;font-size:0.85em;">Ir</a>';
+          contenedor.appendChild(item);
+        });
+      }
+
+      function enviarContacto() {
+        var nombre = document.getElementById("c-nombre").value.trim();
+        var correo = document.getElementById("c-correo").value.trim();
+        var mensaje = document.getElementById("c-mensaje").value.trim();
+
+        if (!nombre || !correo || !mensaje) {
+          alert("Por favor completa todos los campos obligatorios.");
+          return;
+        }
+        // Simulacion de envio - para envio real se necesita backend o servicio como Formspree
+        document.getElementById("msg-exito").style.display = "block";
+        document.getElementById("c-nombre").value = "";
+        document.getElementById("c-correo").value = "";
+        document.getElementById("c-mensaje").value = "";
+        document.getElementById("c-asunto").value = "";
+      }
+    </script>
+  </body>
+</html>
